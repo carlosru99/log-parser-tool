@@ -52,7 +52,7 @@ def str_to_datetime(date_str: str) -> datetime.datetime:
 
 def main():
     if len(sys.argv) != 5:
-        print("Uso: python main.py <nombre_archivo> <init_timestamp> <end_timestamp> <hostname>")
+        print("Correct input format: python main.py <nombre_archivo> <init_timestamp> <end_timestamp> <hostname>")
         sys.exit(1)
 
     try:
@@ -62,12 +62,12 @@ def main():
         hostname = sys.argv[4]
 
         connections = parse_log(file_path, time_init, time_end, hostname)
-        print(f"Conexiones encontradas para el Host \"{hostname}\":", connections)
+        print(f"Found connections for host \"{hostname}\":", connections)
     except ValueError as ve:
-        print(f"Error en los formatos de fecha/hora: {ve}")
+        print(f"Datetime input format: {ve}")
         sys.exit(1)
     except Exception as e:
-        print(f"Error inesperado: {e}")
+        print(f"Unexpeceted error: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
