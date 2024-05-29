@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../scripts')))
 from main_data_parser import parse_log, str_to_datetime
 
 def test_parse_log_with_valid_range_and_host():

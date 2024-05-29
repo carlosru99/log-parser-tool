@@ -3,7 +3,7 @@ import time
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../scripts')))
 def append_logs(initial_datetime, interval_seconds, num_records, host_from, host_to):
     for _ in range(num_records):
         with open("log.txt", 'a') as f:
