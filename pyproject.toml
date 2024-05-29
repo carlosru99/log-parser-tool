@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.8"
 poetry-dotenv-plugin = "0.1.0"
 makefile = "1.1.0"
+pytest = "*"
 
 [build-system]
 requires = ["poetry-core"]
