@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "Log Parser Tool"
+version = "1.0.0"
+description = "Log Parser Tool for Clarity AI technical interview"
+authors = ["carlosru99"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+makefile = "1.1.0"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
